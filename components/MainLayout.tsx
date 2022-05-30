@@ -17,9 +17,12 @@ export  function MainLayout({children, title}: Main){
                <Link href={'/'}><a>Главная</a></Link>
                <Link href={'/posts'}><a>Афоризмы</a></Link>
             </nav>
-            <main>
+            <div className="wrapper">
                 {children}
-            </main>
+            </div>
+            <footer>
+                <div className="by">by GTSK</div>  
+            </footer>
         </>
     )
 }

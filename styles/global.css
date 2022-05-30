@@ -40,12 +40,41 @@ html::-webkit-scrollbar {
 }
 html{
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    background: #0d1117;
+    color: whitesmoke;
 }
-
+.main__page{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main__page h1{
+    font-size: 30px;
+    font-weight: 800;
+}
+.main__page ul{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.main__page ul li{
+    list-style: circle;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.main__page .myName{
+    font-size: 24px;
+    font-weight: 600;
+}
+#__next{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
 .Navbar{
-    position: relative;
     height: 60px;
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -60,15 +89,103 @@ html{
     font-size: 20px;
     font-weight: 700;
 }
-
-main{
-    margin: 100px 10%;
+.wrapper{
+    margin: 0 5% 0 5%;
 }
-main p{
+.wrapper p{
     font-size: 24px;
 }
-main a{
+.wrapper a{
     color: black;
     font-size: 20px;
     text-decoration: underline;
 }
+.content__wrapper{
+    min-height: 70vh;
+    margin-top: 20px;
+}
+.content__wrapper .header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.content__wrapper .header .changeButton{
+    background: #1d69e0;
+    padding: 10px;
+    border: 1px solid #1d69e0;
+    border-radius: 15px;
+}
+.content__wrapper .header .changeButton:hover{
+    cursor: pointer;
+}
+.content__wrapper .header .changeButton:active{
+    cursor: pointer;
+    background: #0d1117;
+    border: 1px solid #30363d;
+}
+.content__wrapper h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.aphorism__card-grid{
+    min-height: 70vh;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    justify-content: space-between;
+    grid-gap: 30px;
+}
+.aphorism__card{
+    background-color: #1a2c43;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+}
+.aphorism__text{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.aphorism__avtor{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #8b949e;;
+}
+.aphorism__avtor img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.aphorism__like{
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.aphorism__like .like{
+    margin-right: 10px;
+}
+.aphorism__like .like:hover{
+    cursor: pointer;
+}
+.aphorism__like .like img{
+    height: 25px;
+    width: 25px;
+}
+footer{
+    display: flex;
+    height: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+
+

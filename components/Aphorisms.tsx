@@ -1,4 +1,5 @@
 import { imageOptimizer } from "next/dist/server/image-optimizer"
+import Link from "next/link"
 import React, { useEffect, useState } from "react"
 import { isContext } from "vm"
 import { IPost } from "../components/types/types"
@@ -36,7 +37,7 @@ export default function Aphorisms({posts, update}: PostProps){
                     {posts.map((post, index) => 
                         <div className="aphorism__card">
                             <div className="aphorism__text">
-                                {post.q}
+                                <Link href={`/posts/${index}`}>{post.q}</Link>
                             </div>
                             <div className="aphorism__avtor">
                                 <img src="human.ico" alt="" />

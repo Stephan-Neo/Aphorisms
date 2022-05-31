@@ -106,7 +106,6 @@ html{
 }
 .content__wrapper .header{
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -151,12 +150,16 @@ html{
     margin-bottom: 10px;
     font-size: 18px;
 }
+.aphorism__text a{
+    color: whitesmoke;
+    text-decoration: none;
+}
 .aphorism__avtor{
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     font-size: 16px;
-    color: #8b949e;;
+    color: #8b949e;
 }
 .aphorism__avtor img{
     width: 20px;
@@ -179,12 +182,83 @@ html{
     height: 25px;
     width: 25px;
 }
+.about__post{
+    background: #1a2c43;;
+    padding: 40px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+.about__post .text{
+    font-size: 25px;
+}
+.about__post .avtor{
+    font-size: 20px;
+    margin-top: 30px;
+    color: #8b949e;
+}
+.like__wrapper img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.like__wrapper img:hover{
+    cursor: pointer;
+}
+.like__wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
 footer{
     display: flex;
     height: 100%;
     padding: 20px;
     margin-top: 10px;
     justify-content: flex-end;
+}
+.Error{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.Error a{
+    color: whitesmoke;
+    text-decoration: underline;
+}
+.Error img{
+    margin-top: 40px;
+}
+@media (max-width: 767px){
+    .header{
+        margin: 0px 20px;
+        width: auto;
+    }
+    .wrapper{
+        margin: 0;
+    }
+    .aphorism__card-grid{
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin: 0;
+        grid-gap: 30px;
+        margin-top: 40px;
+    }
+    .aphorism__card{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding: 40px 20px;
+    }
+    .myName{
+        margin-left: 10px;
+    }
+    .main__page h1{
+        margin: 0 10px;
+    }
 }
 
 
